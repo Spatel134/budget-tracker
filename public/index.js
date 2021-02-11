@@ -16,15 +16,15 @@ fetch("/api/transaction")
 
 function populateTotal() {
   // reduce transaction amounts to a single total value
-  if (transactions) {
-    let total = transactions.reduce((total, t) => {
-      return total + parseInt(t.value);
-    }, 0);
+  // if (transactions) {
+  let total = transactions.reduce((total, t) => {
+    return total + parseInt(t.value);
+  }, 0);
 
-    let totalEl = document.querySelector("#total");
-    totalEl.textContent = total;
-  }
+  let totalEl = document.querySelector("#total");
+  totalEl.textContent = total;
 }
+// }
 
 function populateTable() {
   let tbody = document.querySelector("#tbody");
@@ -108,9 +108,9 @@ function sendTransaction(isAdding) {
   }
 
   // add to beginning of current array of data
-  if (transaction) {
+  // if (transaction) {
     transactions.unshift(transaction);
-  }
+  // }
 
   // re-run logic to populate ui with new record
   populateChart();
