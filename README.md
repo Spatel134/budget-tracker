@@ -18,10 +18,10 @@
 
 ---
 ## DEMO:
-![DEMO](./public/assets/img/fitness-tracker-demo.gif)
+![DEMO](./assets/img/budget-tracker-demo.gif)
 
 ## Preview: 
-![Homepage](./public/assets/img/fitness-homepage.png)
+![Homepage](./assets/img/budget-tracker.png)
 
 
 
